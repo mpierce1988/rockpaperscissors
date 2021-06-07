@@ -1,13 +1,13 @@
 function computerPlay() {
-    let randomIndex = Math.floor(Math.random() * 4);
-    switch(randomIndex) {
-        case 1:
+    let randomIndex = Math.random() * 3;
+    switch(true) {
+        case randomIndex < 1:
             console.log("Computer picked Rock.");
             return "rock";
-        case 2:
+        case randomIndex < 2:
             console.log("Computer picked Paper.");
             return "paper";
-        case 3:
+        case randomIndex < 3:
             console.log("Computer picked Scissors.");
             return "scissors";
         default:
@@ -82,4 +82,6 @@ function game(){
     console.log(playRound(playerPlay(), computerPlay()));
     
 }
+
+game();
 
