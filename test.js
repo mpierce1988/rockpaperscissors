@@ -74,3 +74,12 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+function game(){
+    console.log(playRound(playerPlay(), computerPlay()));
+    console.log(playRound(playerPlay(), computerPlay()));
+    console.log(playRound(playerPlay(), computerPlay()));
+    console.log(playRound(playerPlay(), computerPlay()));
+    console.log(playRound(playerPlay(), computerPlay()));
+    
+}
+
